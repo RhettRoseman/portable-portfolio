@@ -1,10 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 export default function Resumepage(){
-    return(
+    return (
         <div>
-             <div className="m-5 align-center text-center justify-center border-2 border-white">
-             <img className="justify-center align-center" src="" alt="Resume" />
-            </div>
+            <h1>Resume</h1>
+            <Image src="/images/resume.png" alt="resume" width={1000} height={1000} />
         </div>
     )
 }

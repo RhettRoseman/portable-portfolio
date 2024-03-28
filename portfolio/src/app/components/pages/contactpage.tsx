@@ -5,9 +5,9 @@ import Link from "next/link"
 export default function Contactpage(){
     return(
         <div >
-             <div className="border-2 m-20 w-70">
-                <div className="text-xl text-justify m-5">
-              <Link href=''>Github</Link>  
+             <div className="border-2 m-20 w-70code ">
+                <div className="text-xl text-center m-5 border-2">
+              <Link href='https://github.com/RhettRoseman'>Github: @RhettRoseman</Link>  
             </div>
             <div className="text-xl text-justify m-5">
                Linked in <Link href=''></Link>  
