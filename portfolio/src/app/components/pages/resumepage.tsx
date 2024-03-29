@@ -1,10 +1,32 @@
-import React from 'react';
-import Image from 'next/image';
+
+// export default Resumepage
+
+import { Document, Page, View, Text, Image, PDFViewer, StyleSheet, Font} from '@react-pdf/renderer';
+
+const PDF = () => {
+    return(
+        <Document>
+            <Page>
+                <View style={{display: 'flex', justifyContent: "center", flexDirection: "column"}}>
+                    <Text wrap={false} style={{alignSelf: "flex-end"}}></Text>
+                </View>
+                <View>
+
+                    <Image  src="/techresumepart1.png" />
+                    <Image src="techresumepart2.png"/>
+                </View>
+            </Page>
+        </Document>
+    )
+}
 export default function Resumepage(){
-    return (
-        <div>
-            <h1>Resume</h1>
-            <Image src="/images/resume.png" alt="resume" width={1000} height={1000} />
+    return(
+        <div className='' >
+           
+           <PDFViewer style={{width:800, height:600, justifyContent: 'center' ,marginLeft:450, }}>
+            <PDF/>
+           </PDFViewer>
         </div>
     )
 }
+

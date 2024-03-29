@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Resumepage from "../components/pages/resumepage";
@@ -6,7 +7,9 @@ export default function Resume(){
     return(
         <div>
             <div> <NavTabs /></div>
+            <div >
              <Resumepage />
+             </div>
         </div>
     )
 }
